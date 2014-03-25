@@ -13,7 +13,7 @@ class MyEditorScript {
 	static void PerformMacOSXBuild ()
 	{
 		string target_dir = APP_NAME + ".app";
-		GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.StandaloneOSXIntel,BuildOptions.None);
+		GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.iPhone,BuildOptions.None);
 	}
 	
 	private static string[] FindEnabledEditorScenes() {
