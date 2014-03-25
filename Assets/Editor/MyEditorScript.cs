@@ -7,7 +7,7 @@ class MyEditorScript {
 	static string[] SCENES = FindEnabledEditorScenes();
 	
 	static string APP_NAME = "JenkinsUnityTest01";
-	static string TARGET_DIR = "target";
+	static string TARGET_DIR = "/Users/Shared/Jenkins/Desktop/Test";
 	
 	[MenuItem ("Custom/CI/Build Mac OS X")]
 	static void PerformMacOSXBuild ()
