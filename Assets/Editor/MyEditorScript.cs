@@ -7,12 +7,12 @@ class MyEditorScript {
 	static string[] SCENES = FindEnabledEditorScenes();
 	
 	static string APP_NAME = "JenkinsUnityTest01";
-	static string TARGET_DIR = "/Users/Gearworks/Desktop/TestingJenkins";
+	static string TARGET_DIR = "";
 	
 	[MenuItem ("Custom/CI/Build Mac OS X")]
 	static void PerformMacOSXBuild ()
 	{
-		string target_dir = APP_NAME + ".app";
+		string target_dir = APP_NAME ;//+ ".app";
 		GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.iPhone,BuildOptions.None);
 	}
 	
